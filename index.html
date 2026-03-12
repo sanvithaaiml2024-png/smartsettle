@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SmartSettle Traffic Control</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>SmartSettle</h1>
+<h3>Adaptive Payment Traffic Control</h3>
+
+<div class="input-box">
+
+<textarea id="input">
+
+[
+{"tx_id":"T1","amount":50000,"priority":5},
+{"tx_id":"T2","amount":200,"priority":1},
+{"tx_id":"T3","amount":5000,"priority":4}
+]
+
+</textarea>
+
+<button onclick="optimize()">Run Smart Routing</button>
+
+</div>
+
+<h2>Payment Routing Dashboard</h2>
+
+<table id="result">
+
+<tr>
+<th>Transaction</th>
+<th>Channel</th>
+<th>Score</th>
+<th>Reason</th>
+</tr>
+
+</table>
+
+<div class="channels">
+
+<div class="channel fast">FAST</div>
+<div class="channel standard">STANDARD</div>
+<div class="channel bulk">BULK</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
