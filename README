@@ -1,0 +1,43 @@
+# SmartSettle – Payment Routing Optimizer
+
+SmartSettle is a fintech web application that simulates intelligent payment routing. 
+It analyzes transaction priority and routes payments through the most suitable channel 
+to optimize cost and performance.
+
+## Features
+
+- Smart transaction routing
+- Three payment channels: FAST, STANDARD, BULK
+- Priority-based optimization
+- Simple web dashboard
+- Built using HTML, CSS, and JavaScript
+
+## How It Works
+
+1. User enters transaction details in JSON format.
+2. The system analyzes priority and calculates channel scores.
+3. The optimizer selects the best channel for each transaction.
+4. Results are displayed in the routing dashboard.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## Payment Channels
+
+| Channel | Purpose |
+|-------|--------|
+| FAST | High priority transactions |
+| STANDARD | Medium priority transactions |
+| BULK | Low priority transactions |
+
+## Example Input
+
+```json
+[
+{"tx_id":"T1","amount":10000,"priority":5},
+{"tx_id":"T2","amount":200,"priority":1},
+{"tx_id":"T3","amount":5000,"priority":4}
+]
